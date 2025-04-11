@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>5 лекция, 15 вариант</h1>
+
+	<h2>Задача 1: Замена текста при клике</h2>
+	<p id="clickableText" style="padding: 5px;border: 1px solid black;" onclick="changeText()">Нажми на меня, чтобы изменить текст</p>
+
+	<h2>Задача 2: Проверка email</h2>
+	<form id="validateEmail" onsubmit="validateEmail(event)">
+		<label for="email">Введите email:</label>
+		<br>
+		<input type="email" name="email" id="email" placeholder="example@mail.com" required>
+		<br>
+		<button style="margin-top: 10px;" type="submit">Отправить</button>
+		<p style="margin-top: 10px;" id="message"></p>
+	</form>
+
+	<h2>Задача 3</h2>
+	<button onclick="currentTimeOutput()">Показать дату и время</button>
+
+
+	<script src="./script.js"></script>
+</body>
+
+</html>
