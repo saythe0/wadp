@@ -2,14 +2,14 @@
 function checkNumber() {
 	let number = parseFloat(prompt("Введите число:"));
 
-	if (isNaN(number)) {
-		alert("Ошибка: Введено не число");
+	if (number === 0) {
+		alert("Число равно 0");
 	} else if (number < 0) {
 		alert("Число отрицательное");
 	} else if (number > 0) {
 		alert("Число положительное");
 	} else {
-		alert("Число равно 0");
+		alert("Ошибка: Введено не число");
 	}
 }
 
